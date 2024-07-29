@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route, Router } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import { useEffect } from "react";
 import Loader from "./components/Loader";
@@ -48,14 +48,14 @@ function App() {
   }, [reloadData]);
 
   return (
-    <Router>
+    <BrowserRouter>
       {loading ? <Loader /> : null}
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route exact path="/" element={<Home />} />
         <Route path="/admin" element={<Admin />} />
         <Route path="/admin-login" element={<Login />} />
       </Routes>
-    </Router>
+    </BrowserRouter>
   );
 }
 
