@@ -36,13 +36,13 @@ function AdminCourses() {
 
       if (selectedItemForEdit) {
         // Update Course
-        response = await axios.post("/api/portfolio/update-Course", {
+        response = await axios.post(`${process.env.REACT_APP_API_URL}/api/portfolio/update-course`, {
           ...values,
           _id: selectedItemForEdit._id,
         });
       } else {
         // Add new Course
-        response = await axios.post("/api/portfolio/add-Course", values);
+        response = await axios.post(`${process.env.REACT_APP_API_URL}/api/portfolio/add-course`, values);
       }
 
       if (response.data.success) {
@@ -62,7 +62,7 @@ function AdminCourses() {
   const onDelete = async (item) => {
     try {
       dispatch(ShowLoading());
-      const response = await axios.post("/api/portfolio/delete-Course", {
+      const response = await axios.post(`${process.env.REACT_APP_API_URL}/api/portfolio/delete-course`, {
         _id: item._id,
       });
 

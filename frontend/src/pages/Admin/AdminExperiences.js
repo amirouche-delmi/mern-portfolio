@@ -23,13 +23,13 @@ function AdminExperiences() {
 
       if (selectedItemForEdit) {
         // Update experience
-        response = await axios.post("/api/portfolio/update-experience", {
+        response = await axios.post(`${process.env.REACT_APP_API_URL}/api/portfolio/update-experience`, {
           ...values,
           _id: selectedItemForEdit._id,
         });
       } else {
         // Add new experience
-        response = await axios.post("/api/portfolio/add-experience", values);
+        response = await axios.post(`${process.env.REACT_APP_API_URL}/api/portfolio/add-experience`, values);
       }
 
       dispatch(HideLoading());
@@ -51,7 +51,7 @@ function AdminExperiences() {
   const onDelete = async (item) => {
     try {
       dispatch(ShowLoading());
-      const response = await axios.post("/api/portfolio/delete-experience", {
+      const response = await axios.post(`${process.env.REACT_APP_API_URL}/api/portfolio/delete-experience`, {
         _id: item._id,
       });
       dispatch(HideLoading());
