@@ -7,8 +7,8 @@ function Intro() {
   const {firstName, lastName, welcomeText, description, caption} = intro;
 
   return (
-    <div className='h-[80vh] bg-primary flex flex-col items-start justify-center gap-5'>
-        <h1 className='text-white sm:mt-40'>{welcomeText || ''}</h1>
+    <div className='h-[80vh] bg-primary flex flex-col items-start justify-center gap-5 sm:gap-4 sm:h-[100vh]'>
+        <h1 className='text-white'>{welcomeText || ''}</h1>
         <h1 className='text-6xl sm:text-3xl text-secondary font-semibold'>{firstName || ''} {lastName || ''}</h1>
         <h1 className='text-5xl sm:text-2xl text-white font-semibold'>{caption || ''}</h1>
         <p className='text-white'>
