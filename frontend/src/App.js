@@ -51,7 +51,7 @@ function App() {
     <BrowserRouter>
       {loading ? <Loader /> : null}
       <Routes>
-        <Route exact path="/" element={<Home />} />
+        {/* <Route exact path="/" element={<Home />} /> */}
         <Route path="/admin" element={<Admin />} />
         <Route path="/admin-login" element={<Login />} />
       </Routes>
