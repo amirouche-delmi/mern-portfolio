@@ -9,7 +9,7 @@ export const Experiences = () => {
  
   return (
     <div>
-        <SectionTitle title="Experiences" />
+        <SectionTitle title="Formation" />
 
         <div className="flex py-10 gap-20 sm:flex-col">
             <div className='flex flex-col gap-10 border-l-2 border-[#135e4c82] w-1/4 sm:flex-row sm:overflow-x-scroll sm:w-full'>
@@ -22,7 +22,7 @@ export const Experiences = () => {
             <div className='flex flex-col gap-5 w-3/4'>
                 <h1 className="text-secondary text-xl">{experiences[selectedItemIndex].title}</h1>
                 <h1 className="text-tertiary text-xl">{experiences[selectedItemIndex].company}</h1>
-                <p className='text-white'>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iste odio, sequi sint praesentium dolorum porro excepturi quae eos! Soluta exercitationem non et incidunt pariatur omnis mollitia at, dignissimos sit ad!</p>
+                <p className='text-white'>{experiences[selectedItemIndex].description}</p>
             </div>
         </div>
     </div>

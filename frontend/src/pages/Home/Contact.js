@@ -8,7 +8,7 @@ function Contact() {
 
   return (
     <div>
-      <SectionTitle title="Say Hello" />
+      <SectionTitle title="Détails Personnels" />
 
       <div className="flex sm:flex-col items-center justify-between">
         <div className="flex flex-col gap-1">

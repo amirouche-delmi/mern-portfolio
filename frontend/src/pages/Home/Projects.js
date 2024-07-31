@@ -9,7 +9,7 @@ function Projects() {
 
   return (
     <div>
-        <SectionTitle title="Projects" />
+        <SectionTitle title="Projets" />
 
         <div className="flex py-10 gap-20 sm:flex-col">
             <div className='flex flex-col gap-10 border-l-2 border-[#135e4c82] w-1/4 sm:flex-row sm:overflow-x-scroll sm:w-full'>

@@ -93,7 +93,7 @@ function AdminExperiences() {
             </h1>
             <hr />
             <h1>Company : {experience.company}</h1>
-            <h1>Role : {experience.title}</h1>
+            <h1>title : {experience.title}</h1>
             <h1>{experience.description}</h1>
             <div className="flex justify-end gap-5 mt-5">
               <button
