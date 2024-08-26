@@ -26,7 +26,7 @@ const port = process.env.PORT || 5000;
 // Fonction pour envoyer des requêtes périodiques
 const keepAlive = () => {
   const url = 'https://mern-portfolio-frontend-xcx9.onrender.com'; // URL de votre portfolio
-  const interval = 5 * 60 * 1000; // Par exemple, toutes les 5 minutes
+  const interval = 60 * 1000; // Par exemple, toutes les 5 minutes
 
   // Choisir le bon module (http ou https) en fonction du protocole de l'URL
   const requestModule = url.startsWith('https') ? https : http;
